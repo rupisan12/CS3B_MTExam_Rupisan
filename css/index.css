@@ -290,7 +290,8 @@ button:hover {
 .status-skill p,
 .detail-text p,
 .min,
-.details span {
+.details span,
+.detailed span {
   font-size: 1em; /* Adjust font size as needed */
   color: #666; /* Text color */
 }
@@ -547,9 +548,59 @@ textarea {
   padding-bottom: 5rem;
 }
 .feature-wrapper aside {
-  width: 40%; /* Set the width */
+  width: 20%; /* Set the width */
   height: 600px; /* Set the height */
   overflow: hidden; /* Hide overflow */
   background-color: #f0f0f0; /* Optional: Background color for visibility */
 }
+.order {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.order-lay {
+  display: grid;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border-radius: 5px;
+  /* text-align: left; */
+  width: 200px;
+  height: 550px;
+  /* height: max-content; */
+  align-items: center;
+  place-content: space-between;
+}
+.order-lay img {
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.detailed {
+  padding: 20px 15px;
+}
+.detailed h3 {
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.order-nav:hover {
+  background-color: #2f2f2f; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  transform: scale(1.1);
+}
+.cont {
+  margin-top: 10px;
+}
 
+.order-nav {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #2f2f2f;
+  background-color: transparent;
+}
+.payment {
+  font-size: 25px;
+}
