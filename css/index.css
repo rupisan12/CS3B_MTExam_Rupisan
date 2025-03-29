@@ -64,8 +64,7 @@ header a {
 }
 
 .b-nav:hover {
-  background-color: #2f2f2f; /* Change background color on hover */
-  /* Change text color on hover */
+  background-color: #2f2f2f;
   transform: scale(1.1);
 }
 .logo-font:hover {
@@ -149,11 +148,10 @@ hr {
 }
 
 .home:hover {
-  background-color: #2f2f2f; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+  background-color: #2f2f2f;
+  color: white;
 }
 .main-mobile {
-  /* padding: 30px; */
   width: 200px;
   background-color: var(--color-bg-main-mobile);
   height: 299px;
@@ -221,7 +219,7 @@ hr {
 }
 .info p b,
 .info button {
-  font-weight: 900; /* Override the font weight for the <b> tags */
+  font-weight: 900;
 }
 
 .text-hero {
@@ -239,7 +237,7 @@ hr {
 .text-hero h1:nth-child(2) {
   font-size: 7rem;
   color: transparent;
-  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text;
   -webkit-text-stroke: 2px #fff;
 }
 .info {
@@ -249,7 +247,7 @@ hr {
 .info h2,
 .info h3,
 .info p {
-  margin: 20px 0; /* Adjust the vertical spacing as needed */
+  margin: 20px 0;
 }
 
 .info button {
@@ -265,8 +263,8 @@ hr {
 }
 
 button:hover {
-  background-color: white; /* Change background color on hover */
-  color: #2f2f2f; /* Change text color on hover */
+  background-color: white;
+  color: #2f2f2f;
   transform: scale(1.1);
 }
 
@@ -291,7 +289,7 @@ button:hover {
 }
 .title-skill h2,
 .form h2 {
-  color: #333; /* Text color */
+  color: #333;
   font-weight: 800;
 }
 .title-skill h2,
@@ -307,8 +305,8 @@ button:hover {
 .min,
 .details span,
 .detailed span {
-  font-size: 1em; /* Adjust font size as needed */
-  color: #666; /* Text color */
+  font-size: 1em;
+  color: #666;
 }
 
 .main-skill-wrapper {
@@ -367,7 +365,7 @@ button:hover {
 }
 
 .skill {
-  margin-bottom: 15px; /* Space between each skill */
+  margin-bottom: 15px;
 }
 .detail-skill {
   justify-content: space-between;
@@ -375,18 +373,18 @@ button:hover {
   margin-bottom: 10px;
 }
 .progress-bar {
-  background-color: #e0e0e0; /* Background color for the progress bar */
-  border-radius: 5px; /* Rounded corners */
-  overflow: hidden; /* Hide overflow */
-  height: 15px; /* Height of the progress bar */
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 15px;
 }
 
 .progress {
-  background-color: #2f2f2f; /* Color of the progress */
-  height: 100%; /* Full height */ /* Text color for percentage */
-  text-align: center; /* Center the percentage text */
-  line-height: 20px; /* Center text vertically */
-  transition: width 0.5s; /* Smooth transition for width change */
+  background-color: #2f2f2f;
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  transition: width 0.5s;
 }
 
 .stat-skill {
@@ -405,15 +403,15 @@ button:hover {
   padding-bottom: 5rem;
 }
 .personal-wrapper aside {
-  width: 40%; /* Set the width */
-  height: 600px; /* Set the height */
-  overflow: hidden; /* Hide overflow */
-  background-color: #f0f0f0; /* Optional: Background color for visibility */
+  width: 40%;
+  height: 600px;
+  overflow: hidden;
+  background-color: #f0f0f0;
 }
 
 .personal-wrapper aside img {
-  width: 100%; /* Make the image fill the container */
-  height: auto; /* Maintain aspect ratio of the image */
+  width: 100%;
+  height: auto;
 }
 
 .information-text {
@@ -495,7 +493,7 @@ button:hover {
   justify-items: center;
 }
 .form-group {
-  margin-bottom: 15px; /* Space between form groups */
+  margin-bottom: 15px;
   text-align: left;
 }
 
@@ -509,15 +507,15 @@ input[type="text"],
 input[type="email"],
 textarea {
   height: 2.5rem;
-  width: 100%; /* Full width */
-  padding: 10px; /* Padding inside input fields */
+  width: 100%;
+  padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
   font-size: 1em;
 }
 
 textarea {
-  resize: none; /* Disable resizing of the textarea */
+  resize: none;
   height: 250px;
 }
 
@@ -545,7 +543,7 @@ textarea {
   color: #fff;
   justify-content: center;
   display: flex;
-  /* align-items: center; */
+
   height: 5rem;
 
   align-items: center;
@@ -556,24 +554,37 @@ textarea {
 
 /* Feature Page */
 
+.logo {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
+.logo-ft {
+  max-width: 230px;
+
+  object-fit: cover;
+}
+
 .feature-wrapper {
   display: flex;
   place-content: space-between;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  height: 100vh;
 }
 .feature-wrapper aside {
-  padding: 20px 20px;
   place-content: space-evenly;
-
   width: 20%;
-  height: 650px;
+  /* height: 650px; */
   overflow: hidden;
-  background-color: #f0f0f0;
   justify-items: center;
+  display: block;
+  align-content: space-between;
 }
 .order {
-  display: flex;
+  display: block;
   justify-content: space-between;
   width: 70%;
 }
@@ -588,6 +599,11 @@ textarea {
   /* height: max-content; */
   align-items: center;
   place-content: space-between;
+}
+
+.product-display {
+  display: flex;
+  justify-content: space-between;
 }
 .add-cart {
   height: 500px;
@@ -608,8 +624,8 @@ textarea {
   margin-bottom: 10px;
 }
 .order-nav:hover {
-  background-color: #2f2f2f; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+  background-color: #2f2f2f;
+  color: white;
   transform: scale(1.1);
 }
 .cont {
@@ -629,6 +645,13 @@ textarea {
   font-size: 25px;
 }
 
+.product-aside {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  justify-items: center;
+  padding: 10px 20px;
+}
 .cart-items {
   display: grid;
   gap: 5px;
@@ -649,8 +672,8 @@ textarea {
 }
 
 .btn-cart:hover {
-  background-color: #2f2f2f; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+  background-color: #2f2f2f;
+  color: white;
   transform: scale(1.1);
 }
 .detail-style {
@@ -667,11 +690,55 @@ textarea {
 }
 
 .mini-x:hover {
-  background-color: #2f2f2f; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+  background-color: #2f2f2f;
+  color: white;
 }
 
 .money {
   width: max-content;
   display: flex;
+}
+
+.feature-info {
+  width: max-content;
+  display: flex;
+}
+
+.logo-ft-sub {
+  max-width: 230px;
+  /* height: 150px; */
+  object-fit: cover;
+}
+
+.order-selected {
+  height: 25%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  margin-bottom: 2rem;
+  padding: 20px 30px;
+  align-content: center;
+  display: flex;
+}
+
+.section-ft {
+  align-content: center;
+  margin-left: 50px;
+}
+.section-ft h2,
+.section-ft h3 {
+  font-weight: 800;
+}
+
+.section-ft h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-ft h3 {
+  margin-bottom: 5px;
+}
+
+.section p {
+  font-size: 1em;
+  color: #666;
 }
