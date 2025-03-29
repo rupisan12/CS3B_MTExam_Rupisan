@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Feature Page</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css" />
     <link
       href="https://fonts.googleapis.com/css?family=League Spartan"
@@ -22,8 +22,12 @@
           <div class="nav-bar-site">
             <nav class="comp-wrapper">
               <ul class="nav-wrapper">
-                <li class="b-nav logo-font logo-fs">Home</li>
-                <li class="b-nav logo-font logo-fs">Feature</li>
+                <li class="b-nav logo-fs">
+                  <a href="#" class="logo-font logo-fs">Home</a>
+                </li>
+                <li class="b-nav logo-fs">
+                  <a href="feature.html" class="logo-font logo-fs">Feature</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -41,13 +45,15 @@
               Welcome to my feature page! You can browse my products I made from
               unique electronic gadgets, and many more.
             </p>
-            <button>Browse</button>
+            <a href="#feature-section">
+              <button type="button">Browse</button>
+            </a>
           </div>
         </div>
       </section>
       <div class="main-site wrapper">
         <div class="main-sub-wrapper">
-          <section class="feature-wrapper">
+          <section class="feature-wrapper" id="feature-section">
             <div class="order">
               <div class="order-lay">
                 <img src="assets/logo-amz.png" alt="Portrait Photo" />
@@ -59,33 +65,81 @@
                   >
                   <h3 class="cont">Contents</h3>
                   <span>Include zip and svg files.</span>
-                  <h3 class="cont payment">$15.35</h3>
+                  <h3 class="cont payment">$15.00</h3>
                 </div>
-                <button type="button" class="order-nav" value="15.35">
+                <button
+                  type="button"
+                  class="order-nav"
+                  value="15.35"
+                  onclick="addtocart(0)"
+                >
+                  Add to Cart
+                </button>
+              </div>
+              <div class="order-lay">
+                <img src="assets/remote-arduino.png" alt="Photo" />
+                <div class="detailed">
+                  <h3>Arduino Project Remote Controlled Spider</h3>
+                  <span
+                    >Remote controlled spider using wifi with rechargable
+                    batteries</span
+                  >
+                  <h3 class="cont">Contents</h3>
+                  <span>Include the project product and manual.</span>
+                  <h3 class="cont payment">$40.00</h3>
+                </div>
+                <button
+                  type="button"
+                  class="order-nav"
+                  value="15.35"
+                  onclick="addtocart(1)"
+                >
+                  Add to Cart
+                </button>
+              </div>
+              <div class="order-lay">
+                <img src="assets/book-logo.png" alt="Portrait Photo" />
+                <div class="detailed">
+                  <h3>LBOXY Management System Software</h3>
+                  <span>A library management software for small business.</span>
+                  <h3 class="cont">Contents</h3>
+                  <span>Include exe files and manual.</span>
+                  <h3 class="cont payment">$20.00</h3>
+                </div>
+                <button
+                  type="button"
+                  class="order-nav"
+                  value="15.35"
+                  onclick="addtocart(2)"
+                >
                   Add to Cart
                 </button>
               </div>
               <div class="order-lay">
                 <img src="assets/fingerprint.jpg" alt="Portrait Photo" />
                 <div class="detailed">
-                  <h3>Project UltraSonic Sensor with Software</h3>
+                  <h3>Project Finger Sensor with Software</h3>
                   <span
                     >A DIY made fingerprint sensor with built in software.</span
                   >
                   <h3 class="cont">Contents</h3>
                   <span>Include fingerprint sensor, and etc.</span>
-                  <h3 class="cont payment">$30.99</h3>
+                  <h3 class="cont payment">$30.00</h3>
                 </div>
-                <button class="order-nav">Add to Cart</button>
+                <button class="order-nav" onclick="addtocart(3)">
+                  Add to Cart
+                </button>
               </div>
             </div>
 
-            <aside>
+            <aside class="cart-asi">
               <h2>Your Cart</h2>
-              <div class="add-cart">
-                <div class=""></div>
-                <button class="btn-cart">Proceed to Checkout</button>
+              <div class="add-cart" id="cartItems">Your cart is empty.</div>
+              <div class="money">
+                <h3 id="totalPrice">Total Price: $</h3>
+                <h3 id="totalmoneh"></h3>
               </div>
+              <button class="btn-cart">Proceed to Checkout</button>
             </aside>
           </section>
         </div>
@@ -93,8 +147,8 @@
     </div>
 
     <footer class="page-footer">
-      <h2>&#169; Christian D. Rupisan. All rights reserved.</h2>
+      <h2>Copyright &#169; 2025 Christian D. Rupisan. All rights reserved.</h2>
     </footer>
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

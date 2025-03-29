@@ -65,10 +65,15 @@ header a {
 
 .b-nav:hover {
   background-color: #2f2f2f; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+  /* Change text color on hover */
   transform: scale(1.1);
 }
-
+.logo-font:hover {
+  color: white;
+}
+.logo-font {
+  color: #2f2f2f;
+}
 .b-nav {
   margin-right: 38px;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
@@ -139,7 +144,14 @@ hr {
   padding: 10px 20px;
   display: grid;
 }
+.home-bar {
+  color: #2f2f2f;
+}
 
+.home:hover {
+  background-color: #2f2f2f; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
 .main-mobile {
   /* padding: 30px; */
   width: 200px;
@@ -215,6 +227,9 @@ hr {
 .text-hero {
   display: flex;
   letter-spacing: 0.1em;
+}
+.text-hero-mody {
+  display: block;
 }
 .text-hero h1:nth-child(1) {
   font-size: 7rem;
@@ -317,7 +332,7 @@ button:hover {
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
   border-radius: 5px;
   text-align: left;
-
+  width: 400px;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -548,10 +563,14 @@ textarea {
   padding-bottom: 5rem;
 }
 .feature-wrapper aside {
-  width: 20%; /* Set the width */
-  height: 600px; /* Set the height */
-  overflow: hidden; /* Hide overflow */
-  background-color: #f0f0f0; /* Optional: Background color for visibility */
+  padding: 20px 20px;
+  place-content: space-evenly;
+
+  width: 20%;
+  height: 650px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  justify-items: center;
 }
 .order {
   display: flex;
@@ -570,6 +589,11 @@ textarea {
   align-items: center;
   place-content: space-between;
 }
+.add-cart {
+  height: 500px;
+  align-items: flex-start;
+}
+
 .order-lay img {
   max-width: 200px;
   height: 200px;
@@ -603,4 +627,51 @@ textarea {
 }
 .payment {
   font-size: 25px;
+}
+
+.cart-items {
+  display: grid;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.btn-cart {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #2f2f2f;
+  background-color: transparent;
+}
+.cart-asi h2 {
+  font-weight: 800;
+}
+
+.btn-cart:hover {
+  background-color: #2f2f2f; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  transform: scale(1.1);
+}
+.detail-style {
+  font-weight: 600;
+}
+.mini-x {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #2f2f2f;
+  background-color: transparent;
+}
+
+.mini-x:hover {
+  background-color: #2f2f2f; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.money {
+  width: max-content;
+  display: flex;
 }
